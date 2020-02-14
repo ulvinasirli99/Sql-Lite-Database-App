@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sql Database Finish Learn</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="lbl_forgot_password">Do you remove Account?</string>
+    <string name="forgot_password_msg">Sizin hesabınızı silmek üçün qeyd etdiyiniz Mail adresine ehtiyacımız var...</string>
+    <string name="hint_email">Email</string>
+
+</resources>

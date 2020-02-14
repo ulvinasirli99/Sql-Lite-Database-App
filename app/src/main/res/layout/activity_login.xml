@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:backgroundTintMode="multiply"
+    android:backgroundTint="@color/blue"
+    android:background="@drawable/reguster"
+    android:layout_height="match_parent"
+    tools:context=".Database_Account.LoginActivity">
+
+    <EditText
+        android:id="@+id/edtMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/mail"
+        android:ems="10"
+        android:hint="Email/Id"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/lock"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="15dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@+id/edtMail" />
+
+    <Button
+        android:textColor="@color/white"
+        android:background="@drawable/login"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        />
+
+    <CheckBox
+        android:background="@color/white"
+        android:id="@+id/chcShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="CheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <TextView
+        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold|italic"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:layout_marginBottom="75dp"
+        android:id="@+id/txtRegCome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do not you have an account ?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold|italic"
+        android:textColor="@color/yellow"
+        android:textSize="22sp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/txtRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove account ?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
